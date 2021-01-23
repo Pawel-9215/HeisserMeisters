@@ -1,11 +1,12 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://tiles/Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Characters/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Characters/TemplateCharacter.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Characters/SecuCam.tscn" type="PackedScene" id=4]
 
 [node name="TemplateLevel" type="Node2D"]
-position = Vector2( 0, 2 )
+position = Vector2( -46.3999, 17.2 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -19,4 +20,7 @@ position = Vector2( 433.556, 363.076 )
 color = Color( 0.407843, 0.392157, 0.454902, 1 )
 
 [node name="TemplateCharacter" parent="." instance=ExtResource( 3 )]
-position = Vector2( 545.974, 379.527 )
+position = Vector2( 524.478, 398.195 )
+
+[node name="SecuCam" parent="." instance=ExtResource( 4 )]
+position = Vector2( 332.36, 607.637 )
