@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Lightmaps/torchmap.png" type="Texture" id=1]
+
+[node name="Torch" type="Light2D"]
+position = Vector2( 73.6335, 119.43 )
+texture = ExtResource( 1 )
+offset = Vector2( 320, 0 )
+color = Color( 0.91, 0.91, 0.91, 1 )
+shadow_enabled = true
+shadow_gradient_length = 0.5
+shadow_filter = 1
+shadow_filter_smooth = 1.0
