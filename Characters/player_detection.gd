@@ -18,7 +18,7 @@ func _process(delta):
 	
 func Player_in_FOV():
 	var npc_facing_direction = Vector2(1, 0).rotated(global_rotation)
-	var direction_to_PLayer = (Player.position - global_position)
+	var direction_to_PLayer = (Player.position - global_position).normalized()
 	
 	if abs(direction_to_PLayer.angle_to(npc_facing_direction)) <= deg2rad(FOV_TOLERANCE):
 		return true

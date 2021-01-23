@@ -9,5 +9,5 @@ offset = Vector2( 320, 0 )
 color = Color( 0.91, 0.91, 0.91, 1 )
 shadow_enabled = true
 shadow_gradient_length = 0.5
-shadow_filter = 1
-shadow_filter_smooth = 1.0
+shadow_filter = 2
+shadow_filter_smooth = 30.0
