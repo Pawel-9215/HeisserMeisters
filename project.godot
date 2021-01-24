@@ -47,9 +47,16 @@ flashlight={
  ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Tilemap"
+2d_physics/layer_3="NPC"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
+threads/thread_model=2
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
 environment/default_environment="res://default_env.tres"
