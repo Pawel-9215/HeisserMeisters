@@ -19,3 +19,4 @@ current = true
 [node name="Torch" parent="." index="3" instance=ExtResource( 4 )]
 position = Vector2( 16.1413, 0.10997 )
 texture = ExtResource( 5 )
+shadow_filter_smooth = 8.0

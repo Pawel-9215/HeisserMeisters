@@ -53,6 +53,8 @@ shape = SubResource( 1 )
 
 [node name="Torch" parent="CameraBody" instance=ExtResource( 1 )]
 texture = ExtResource( 4 )
+shadow_filter = 0
+shadow_filter_smooth = 0.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CameraBody"]
 autoplay = "CameraRotation"
