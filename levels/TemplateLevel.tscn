@@ -21,7 +21,7 @@ tile_data = PoolIntArray( 262149, 1, 0, 262150, 1, 2, 262151, 1, 2, 262152, 1, 2
 position = Vector2( 433.556, 363.076 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0.407843, 0.392157, 0.454902, 1 )
+color = Color( 0.219608, 0.211765, 0.254902, 1 )
 
 [node name="Cameras" type="Node" parent="."]
 

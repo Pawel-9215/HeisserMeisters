@@ -6,11 +6,21 @@
 [ext_resource path="res://Characters/Guard.gd" type="Script" id=4]
 
 [node name="Guard" instance=ExtResource( 2 )]
+collision_layer = 2147483652
+collision_mask = 3
 script = ExtResource( 4 )
 
 [node name="Sprite" parent="." index="0"]
 position = Vector2( -1, 0 )
 texture = ExtResource( 3 )
 
+[node name="CollisionShape2D" parent="." index="1"]
+visible = true
+
 [node name="Torch" parent="." index="3" instance=ExtResource( 1 )]
 position = Vector2( 14.8671, -0.377975 )
+
+[node name="Timer" type="Timer" parent="." index="4"]
+wait_time = 3.0
+one_shot = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
