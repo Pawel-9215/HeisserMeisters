@@ -11,16 +11,16 @@ var player_detected = false
 
 func _ready():
 	Player = get_node("/root").find_node("Player", true, false)
-	$Debug_sprite_1.rotation_degrees = FOV_TOLERANCE
-	$Debug_sprite_2.rotation_degrees = -FOV_TOLERANCE
+	#$Debug_sprite_1.rotation_degrees = FOV_TOLERANCE
+	#$Debug_sprite_2.rotation_degrees = -FOV_TOLERANCE
 	
 func _process(delta):
 	if Player_in_FOV() and Player_in_LOS():
 		$Torch.color = RED
 	else:
 		$Torch.color = WHITE
-	$Debug_sprite_1.rotation_degrees = FOV_TOLERANCE
-	$Debug_sprite_2.rotation_degrees = -FOV_TOLERANCE
+	#$Debug_sprite_1.rotation_degrees = FOV_TOLERANCE
+	#$Debug_sprite_2.rotation_degrees = -FOV_TOLERANCE
 
 	
 func Player_in_FOV():
@@ -29,12 +29,12 @@ func Player_in_FOV():
 	
 	if abs(direction_to_PLayer.angle_to(npc_facing_direction)) <= deg2rad(FOV_TOLERANCE):
 		if player_detected == false:
-			print("player detected\n", rad2deg(direction_to_PLayer.angle_to(npc_facing_direction)))
+			# print("player detected\n", rad2deg(direction_to_PLayer.angle_to(npc_facing_direction)))
 			player_detected = true
 		return true
 	else:
 		if player_detected == true:
-			print("player undetected\n", rad2deg(direction_to_PLayer.angle_to(npc_facing_direction)))
+			# print("player undetected\n", rad2deg(direction_to_PLayer.angle_to(npc_facing_direction)))
 			player_detected = false
 		return false
 		
